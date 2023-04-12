@@ -12,6 +12,7 @@ Examples
 --------
 
 .. code:: typescript
+
     import { t } from "tailwindcss-multiple-styles"
 
     <div className={t`bg-blue-500 hover:(text-white text-xl)`}>
