@@ -1,5 +1,33 @@
 tailwindcss-multiple-styles
 ===========================
 
-Simple library that adds multiple styles / classes support for
+Concept library that adds multiple styles / classes support for
 tailwindcss.
+
+ATTENTION: since tailwind doesn't support dynamic styles,
+please see:
+https://tailwindcss.com/docs/content-configuration#safelisting-classes
+
+Examples
+--------
+
+.. code:: typescript
+    import { t } from "tailwindcss-multiple-styles"
+
+    <div className={t`bg-blue-500 hover:(text-white text-xl)`}>
+        <h1>Hello World</h1>
+    </div>
+
+Sadly, you can't do this since tailwindcss does not support
+dynamic styles.
+
+However, you can work around this by specifying styles that
+would be added within the `hover:` state in the tailwind config
+file. But, as much as i like it, it is not a good practice.
+
+
+Future Support
+--------------
+
+It *could* be possible to add dynamic styles in the tailwind
+config.
