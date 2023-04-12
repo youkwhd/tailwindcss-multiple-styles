@@ -1,13 +1,13 @@
 const tailwindcssMultipleClassParse = (strings: TemplateStringsArray, ...values: any[]): string => {
-    let str: string = ""
+    let twClass: string = ""
     strings.forEach((_str, index) => {
-        str += _str
+        twClass += _str
 
         if (values[index])
-            str += values[index]
+            twClass += values[index]
     })
 
-    const twClasses = str.split(" ")
+    const twClasses = twClass.split(" ")
     for (let i = 0; i < twClasses.length; i++) {
         if (!twClasses[i].includes(":"))
             continue
@@ -35,3 +35,7 @@ const tailwindcssMultipleClassParse = (strings: TemplateStringsArray, ...values:
 const stringCompareCharAt = (str: string, index: number, char: string): boolean => str[index] === char
 
 export const t = tailwindcssMultipleClassParse
+
+export default {
+    t
+}
