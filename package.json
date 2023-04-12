@@ -5,7 +5,7 @@
   "license": "ISC",
   "repository": {
     "type": "git",
-    "url": "https://github.com/youkwhd/infinite-scroll.ts"
+    "url": "https://github.com/youkwhd/tailwindcss-multiple-styles"
   },
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
