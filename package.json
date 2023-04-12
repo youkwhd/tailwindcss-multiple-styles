@@ -1,7 +1,7 @@
 {
   "name": "tailwindcss-multiple-styles",
   "author": "youkwhd <lolywk@tutanota.com> (https://youkwhd.my.id)",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "license": "ISC",
   "repository": {
     "type": "git",
@@ -15,8 +15,8 @@
     "LICENSE"
   ],
   "keywords": [
-      "tailwindcss",
-      "tailwindcss-variants"
+    "tailwindcss",
+    "tailwindcss-variants"
   ],
   "scripts": {
     "build": "yarn clean && tsc",
