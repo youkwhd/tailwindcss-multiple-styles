@@ -1,0 +1,29 @@
+{
+  "name": "tailwindcss-multiple-styles",
+  "author": "youkwhd <lolywk@tutanota.com> (https://youkwhd.my.id)",
+  "version": "0.0.0",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/youkwhd/infinite-scroll.ts"
+  },
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist/",
+    "README.md",
+    "LICENSE"
+  ],
+  "keywords": [
+      "tailwindcss",
+      "tailwindcss-variants"
+  ],
+  "scripts": {
+    "build": "yarn clean && tsc",
+    "clean": "rm -rf dist/",
+    "upload": "cp README README.md && rm -rf README && yarn publish && mv README.md README"
+  },
+  "devDependencies": {
+    "typescript": "^5.0.4"
+  }
+}
