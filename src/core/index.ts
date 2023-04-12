@@ -1,3 +1,5 @@
+import { stringCompareCharAt } from "../string"
+
 const tailwindcssMultipleClassParse = (strings: TemplateStringsArray, ...values: any[]): string => {
     let twClass: string = ""
     strings.forEach((_str, index) => {
@@ -31,8 +33,6 @@ const tailwindcssMultipleClassParse = (strings: TemplateStringsArray, ...values:
 
     return twClasses.join(" ")
 }
-
-const stringCompareCharAt = (str: string, index: number, char: string): boolean => str[index] === char
 
 export const t = tailwindcssMultipleClassParse
 
